@@ -11,7 +11,7 @@ Este projeto é uma aplicação web para consulta de CNPJ utilizando a API da Br
     git clone <https://github.com/sscastilho/Projeto_CNPJ.git>
     ```
 
-2. Abra o arquivo `index.html` em um navegador web.
+2. Abra o arquivo `index.html` em um navegador web ou a página através desse link: https://sscastilho.github.io/Projeto_CNPJ/.
 
 ## Estrutura do Projeto
 
