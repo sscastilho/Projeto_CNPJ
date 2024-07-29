@@ -1,146 +1,263 @@
-/* Estilos gerais para o corpo da página */
+/* Define o estilo geral do corpo da página */
 body {
     font-family: Arial, sans-serif;
+    /* Define a fonte padrão */
     background-color: #f0f0f0;
+    /* Define a cor de fundo da página */
     margin: 0;
+    /* Remove a margem padrão do navegador */
     display: flex;
+    /* Usa flexbox para centralizar o conteúdo */
     flex-direction: column;
+    /* Alinha os itens em uma coluna */
     justify-content: center;
+    /* Centraliza verticalmente o conteúdo */
     align-items: center;
+    /* Centraliza horizontalmente o conteúdo */
     height: 100vh;
+    /* Define a altura para ocupar toda a altura da viewport */
     overflow: hidden;
+    /* Remove as barras de rolagem */
 }
 
-/* Estilos para o container principal */
+/* Define o estilo do contêiner principal */
 .container {
     background: #fff;
+    /* Define a cor de fundo do contêiner */
     padding: 20px;
+    /* Adiciona espaçamento interno */
     border-radius: 10px;
+    /* Adiciona bordas arredondadas */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra ao contêiner */
     width: 90%;
+    /* Define a largura como 90% da tela */
     max-width: 600px;
+    /* Define uma largura máxima de 600px */
     overflow-y: auto;
+    /* Adiciona rolagem vertical se necessário */
 }
 
-/* Estilos para os títulos */
+/* Define o estilo do título principal */
 h1 {
     color: #0056a8;
+    /* Define a cor do texto */
     text-align: center;
+    /* Centraliza o texto */
 }
 
+/* Define o estilo dos subtítulos */
 h2 {
     color: #333;
+    /* Define a cor do texto */
     margin-top: 0;
+    /* Remove a margem superior */
 }
 
-/* Estilos para a seção de consulta */
+/* Define o estilo da seção de consulta */
 #consulta {
     text-align: center;
+    /* Centraliza o texto dentro da seção */
 }
 
+/* Define o estilo dos campos de entrada na seção de consulta */
 #consulta input {
     padding: 10px;
+    /* Adiciona espaçamento interno */
     width: calc(100% - 22px);
+    /* Define a largura do campo com base no tamanho total */
     margin-bottom: 10px;
+    /* Adiciona margem inferior */
     border: 1px solid #ddd;
+    /* Define a borda dos campos */
     border-radius: 5px;
+    /* Adiciona bordas arredondadas */
 }
 
+/* Define o estilo dos botões na seção de consulta */
 #consulta button {
     padding: 10px 20px;
+    /* Adiciona espaçamento interno */
     background-color: #0056a8;
+    /* Define a cor de fundo */
     color: white;
+    /* Define a cor do texto */
     border: none;
+    /* Remove a borda padrão */
     border-radius: 5px;
+    /* Adiciona bordas arredondadas */
     cursor: pointer;
+    /* Altera o cursor para indicar que é um botão clicável */
 }
 
+/* Define o estilo do botão na seção de consulta ao passar o mouse */
 #consulta button:hover {
     background-color: #004080;
+    /* Altera a cor de fundo ao passar o mouse */
 }
 
-/* Estilos para o formulário de dados da empresa */
+/* Define o estilo dos campos do formulário */
 form div {
     margin-bottom: 15px;
+    /* Adiciona margem inferior */
 }
 
+/* Define o estilo dos rótulos dos campos do formulário */
 form div label {
     display: block;
+    /* Faz com que o rótulo ocupe a linha inteira */
     font-weight: bold;
+    /* Define o texto em negrito */
     margin-bottom: 5px;
+    /* Adiciona margem inferior */
 }
 
+/* Define o estilo dos campos de entrada no formulário */
 form div input {
     padding: 10px;
+    /* Adiciona espaçamento interno */
     width: calc(100% - 22px);
+    /* Define a largura do campo com base no tamanho total */
     border: 1px solid #ddd;
+    /* Define a borda dos campos */
     border-radius: 5px;
+    /* Adiciona bordas arredondadas */
 }
 
+/* Define o estilo dos botões no formulário */
 form button {
     padding: 10px 20px;
+    /* Adiciona espaçamento interno */
     margin-right: 10px;
+    /* Adiciona margem à direita */
     background-color: #0056a8;
+    /* Define a cor de fundo */
     color: white;
+    /* Define a cor do texto */
     border: none;
+    /* Remove a borda padrão */
     border-radius: 5px;
+    /* Adiciona bordas arredondadas */
     cursor: pointer;
+    /* Altera o cursor para indicar que é um botão clicável */
     margin-top: 15px;
+    /* Adiciona margem superior */
 }
 
+/* Define o estilo do botão no formulário ao passar o mouse */
 form button:hover {
     background-color: #004080;
+    /* Altera a cor de fundo ao passar o mouse */
 }
 
-/* Classe para ocultar elementos */
+/* Define o estilo para elementos com a classe 'hidden' */
 .hidden {
     display: none;
+    /* Oculta o elemento */
 }
 
-/* Estilos para a seção de sócios */
+/* Define o estilo da seção de sócios */
 #socios {
     display: flex;
+    /* Usa flexbox para organizar os itens */
     flex-wrap: wrap;
+    /* Permite que os itens se movam para a linha seguinte */
     margin-top: 20px;
+    /* Adiciona margem superior */
     justify-content: space-between;
-    /* Adiciona espaçamento entre os cartões */
+    /* Espaça os itens igualmente */
 }
 
-/* Estilos para os cartões de sócios */
+/* Define o estilo dos cartões de sócios */
 .socio-card {
     background: #f9f9f9;
+    /* Define a cor de fundo dos cartões */
     border: 1px solid #ddd;
+    /* Define a borda dos cartões */
     border-radius: 5px;
+    /* Adiciona bordas arredondadas */
     padding: 10px;
+    /* Adiciona espaçamento interno */
     margin: 10px;
+    /* Adiciona margem ao redor dos cartões */
     width: calc(50% - 20px);
-    /* Ajuste a largura para caber dois cartões por linha */
+    /* Define a largura dos cartões com base na largura total */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra aos cartões */
     box-sizing: border-box;
-    /* Garante que padding e border sejam incluídos na largura total */
+    /* Inclui bordas e preenchimento no cálculo da largura */
 }
 
-/* Estilos para o botão de voltar */
+/* Define o estilo da mensagem de confirmação */
+#confirmationMessage {
+    background: #e0ffe0;
+    /* Define a cor de fundo */
+    padding: 20px;
+    /* Adiciona espaçamento interno */
+    border: 1px solid #00cc00;
+    /* Define a borda */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
+    margin-top: 20px;
+    /* Adiciona margem superior */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Define o estilo do botão de retorno à consulta na mensagem de confirmação */
+#returnToSearchButton {
+    padding: 10px 20px;
+    /* Adiciona espaçamento interno */
+    background-color: #0056a8;
+    /* Define a cor de fundo */
+    color: white;
+    /* Define a cor do texto */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas */
+    cursor: pointer;
+    /* Altera o cursor para indicar que é um botão clicável */
+    margin-top: 20px;
+    /* Adiciona margem superior */
+}
+
+/* Define o estilo do botão de retorno à consulta ao passar o mouse */
+#returnToSearchButton:hover {
+    background-color: #004080;
+    /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Define o estilo do botão de voltar na seção de resultados */
 #backButton {
     margin-bottom: 20px;
-    /* Adiciona um espaço abaixo do botão "Voltar" */
+    /* Adiciona margem inferior */
 }
 
-/* Estilos para o rodapé */
+/* Define o estilo do rodapé */
 footer {
     text-align: center;
+    /* Centraliza o texto no rodapé */
     margin-top: 20px;
+    /* Adiciona margem superior */
 }
 
+/* Define o estilo dos parágrafos no rodapé */
 footer p {
     margin: 5px 0;
+    /* Adiciona margem vertical */
 }
 
+/* Define o estilo dos links no rodapé */
 footer a {
     color: #0056a8;
+    /* Define a cor dos links */
     text-decoration: none;
+    /* Remove o sublinhado dos links */
 }
 
+/* Define o estilo dos links no rodapé ao passar o mouse */
 footer a:hover {
     text-decoration: underline;
+    /* Adiciona o sublinhado ao passar o mouse */
 }

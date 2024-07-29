@@ -2,79 +2,105 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Define a viewport para otimizar a visualização em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página que será exibido na aba do navegador -->
     <title>Consulta de CNPJ - Grupo Digital SF</title>
-    <!-- Link para o arquivo CSS -->
+    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Container principal da página -->
     <div class="container">
-        <!-- Título principal -->
+        <!-- Título principal da página -->
         <h1>Grupo Digital SF</h1>
-        <!-- Subtítulo -->
+        <!-- Subtítulo da página -->
         <h2>Consulta de CNPJ</h2>
-        <!-- Seção de consulta -->
         <div id="consulta">
             <!-- Campo de entrada para o CNPJ -->
             <input type="text" id="cnpjInput" placeholder="Digite o CNPJ (somente números)">
             <!-- Botão para iniciar a consulta -->
             <button id="searchButton">Consultar</button>
         </div>
-        <!-- Seção de resultados, inicialmente oculta -->
         <div id="result" class="hidden">
+            <!-- Título para a seção de dados da empresa -->
             <h2>Dados da Empresa</h2>
-            <!-- Formulário para exibir os dados da empresa -->
             <form id="companyData">
+                <!-- Campo para o nome da empresa -->
                 <div>
                     <label>Nome:</label>
-                    <input type="text" id="nome" name="nome" readonly>
+                    <input type="text" id="nome" name="nome">
                 </div>
+                <!-- Campo para a razão social da empresa -->
                 <div>
                     <label>Razão Social:</label>
-                    <input type="text" id="razao_social" name="razao_social" readonly>
+                    <input type="text" id="razao_social" name="razao_social">
                 </div>
+                <!-- Campo para a data de abertura da empresa -->
                 <div>
                     <label>Data de Abertura:</label>
-                    <input type="text" id="data_inicio_atividade" name="data_inicio_atividade" readonly>
+                    <input type="text" id="data_inicio_atividade" name="data_inicio_atividade">
                 </div>
+                <!-- Campo para a situação cadastral da empresa -->
                 <div>
                     <label>Situação:</label>
-                    <input type="text" id="descricao_situacao_cadastral" name="descricao_situacao_cadastral" readonly>
+                    <input type="text" id="descricao_situacao_cadastral" name="descricao_situacao_cadastral">
                 </div>
+                <!-- Campo para a atividade principal da empresa -->
                 <div>
                     <label>Atividade Principal:</label>
-                    <input type="text" id="cnae_fiscal_descricao" name="cnae_fiscal_descricao" readonly>
+                    <input type="text" id="cnae_fiscal_descricao" name="cnae_fiscal_descricao">
                 </div>
+                <!-- Campo para o endereço completo da empresa -->
                 <div>
                     <label>Endereço Completo:</label>
-                    <input type="text" id="endereco" name="endereco" readonly>
+                    <input type="text" id="endereco" name="endereco">
                 </div>
+                <!-- Campo para o telefone da empresa -->
                 <div>
                     <label>Telefone:</label>
-                    <input type="text" id="telefone" name="telefone" readonly>
+                    <input type="text" id="telefone" name="telefone">
                 </div>
+                <!-- Campo para o e-mail da empresa -->
                 <div>
                     <label>E-mail:</label>
-                    <input type="text" id="email" name="email" readonly>
+                    <input type="text" id="email" name="email">
                 </div>
+                <!-- Botão para submeter os dados -->
+                <button type="button" id="submitButton">Submeter</button>
                 <!-- Botão para voltar à tela de consulta -->
                 <button type="button" id="backButton">Voltar</button>
             </form>
-            <!-- Seção de sócios -->
+            <!-- Título para a seção de sócios -->
             <h2>Sócios</h2>
+            <!-- Div para exibir informações dos sócios -->
             <div id="socios"></div>
         </div>
+        <div id="confirmationMessage" class="hidden">
+            <!-- Título para a mensagem de confirmação de dados submetidos -->
+            <h2>Dados Submetidos</h2>
+            <!-- Exibição dos dados submetidos com tags <span> para preenchimento dinâmico -->
+            <p><strong>Nome:</strong> <span id="confirmNome"></span></p>
+            <p><strong>Razão Social:</strong> <span id="confirmRazaoSocial"></span></p>
+            <p><strong>Data de Abertura:</strong> <span id="confirmDataInicioAtividade"></span></p>
+            <p><strong>Situação:</strong> <span id="confirmDescricaoSituacaoCadastral"></span></p>
+            <p><strong>Atividade Principal:</strong> <span id="confirmCnaeFiscalDescricao"></span></p>
+            <p><strong>Endereço Completo:</strong> <span id="confirmEndereco"></span></p>
+            <p><strong>Telefone:</strong> <span id="confirmTelefone"></span></p>
+            <p><strong>E-mail:</strong> <span id="confirmEmail"></span></p>
+            <!-- Botão para retornar à tela de consulta -->
+            <button id="returnToSearchButton">Voltar à Tela de Consulta</button>
+        </div>
     </div>
-    <!-- Rodapé com informações de contato -->
+    <!-- Rodapé da página com informações de contato do desenvolvedor -->
     <footer>
         <p>Desenvolvido por Sullivan Castilho</p>
         <p><a href="https://www.linkedin.com/in/sullivan-castilho">LinkedIn</a> | <a
                 href="mailto:ssc@outlook.com.br">ssc@outlook.com.br</a></p>
     </footer>
-    <!-- Link para o arquivo JavaScript -->
+    <!-- Link para o arquivo de script JavaScript -->
     <script src="script.js"></script>
 </body>
 
