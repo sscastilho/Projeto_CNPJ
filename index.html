@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CNPJ - Grupo Digital SF</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Container principal da página -->
+    <div class="container">
+        <!-- Título principal -->
+        <h1>Grupo Digital SF</h1>
+        <!-- Subtítulo -->
+        <h2>Consulta de CNPJ</h2>
+        <!-- Seção de consulta -->
+        <div id="consulta">
+            <!-- Campo de entrada para o CNPJ -->
+            <input type="text" id="cnpjInput" placeholder="Digite o CNPJ (somente números)">
+            <!-- Botão para iniciar a consulta -->
+            <button id="searchButton">Consultar</button>
+        </div>
+        <!-- Seção de resultados, inicialmente oculta -->
+        <div id="result" class="hidden">
+            <h2>Dados da Empresa</h2>
+            <!-- Formulário para exibir os dados da empresa -->
+            <form id="companyData">
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" id="nome" name="nome" readonly>
+                </div>
+                <div>
+                    <label>Razão Social:</label>
+                    <input type="text" id="razao_social" name="razao_social" readonly>
+                </div>
+                <div>
+                    <label>Data de Abertura:</label>
+                    <input type="text" id="data_inicio_atividade" name="data_inicio_atividade" readonly>
+                </div>
+                <div>
+                    <label>Situação:</label>
+                    <input type="text" id="descricao_situacao_cadastral" name="descricao_situacao_cadastral" readonly>
+                </div>
+                <div>
+                    <label>Atividade Principal:</label>
+                    <input type="text" id="cnae_fiscal_descricao" name="cnae_fiscal_descricao" readonly>
+                </div>
+                <div>
+                    <label>Endereço Completo:</label>
+                    <input type="text" id="endereco" name="endereco" readonly>
+                </div>
+                <div>
+                    <label>Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" readonly>
+                </div>
+                <div>
+                    <label>E-mail:</label>
+                    <input type="text" id="email" name="email" readonly>
+                </div>
+                <!-- Botão para voltar à tela de consulta -->
+                <button type="button" id="backButton">Voltar</button>
+            </form>
+            <!-- Seção de sócios -->
+            <h2>Sócios</h2>
+            <div id="socios"></div>
+        </div>
+    </div>
+    <!-- Rodapé com informações de contato -->
+    <footer>
+        <p>Desenvolvido por Sullivan Castilho</p>
+        <p><a href="https://www.linkedin.com/in/sullivan-castilho">LinkedIn</a> | <a
+                href="mailto:ssc@outlook.com.br">ssc@outlook.com.br</a></p>
+    </footer>
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

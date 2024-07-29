@@ -1,0 +1,146 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Estilos para o container principal */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    overflow-y: auto;
+}
+
+/* Estilos para os títulos */
+h1 {
+    color: #0056a8;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Estilos para a seção de consulta */
+#consulta {
+    text-align: center;
+}
+
+#consulta input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#consulta button {
+    padding: 10px 20px;
+    background-color: #0056a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#consulta button:hover {
+    background-color: #004080;
+}
+
+/* Estilos para o formulário de dados da empresa */
+form div {
+    margin-bottom: 15px;
+}
+
+form div label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form div input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #0056a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #004080;
+}
+
+/* Classe para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilos para a seção de sócios */
+#socios {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+    /* Adiciona espaçamento entre os cartões */
+}
+
+/* Estilos para os cartões de sócios */
+.socio-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(50% - 20px);
+    /* Ajuste a largura para caber dois cartões por linha */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    /* Garante que padding e border sejam incluídos na largura total */
+}
+
+/* Estilos para o botão de voltar */
+#backButton {
+    margin-bottom: 20px;
+    /* Adiciona um espaço abaixo do botão "Voltar" */
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #0056a8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
