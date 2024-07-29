@@ -41,9 +41,8 @@ Este projeto é uma aplicação web para consulta de CNPJ utilizando a API da Br
 
 <div>
     <img src="https://github.com/sscastilho/Projeto_CNPJ/blob/master/assets/Consulta-de-CNPJ.png" alt="Consulta de CNPJ" style="width: 300px; margin-right: 10px;" />
-    <img src="https://github.com/sscastilho/Projeto_CNPJ/blob/master/assets/Dados-Submetidos.png" alt="Dados Submetidos" style="width: 300px; margin-right: 10px;" />
     <img src="https://github.com/sscastilho/Projeto_CNPJ/blob/master/assets/Dados-da-Empresa.png" alt="Dados da Empresa" style="width: 300px; margin-right: 10px;" />
-    <img src="https://github.com/sscastilho/Projeto_CNPJ/blob/master/assets/Submeter-Dados.png" alt="Submeter Dados" style="width: 300px;" />
+    <img src="https://github.com/sscastilho/Projeto_CNPJ/blob/master/assets/Dados-Submetidos.png" alt="Dados Submetidos" style="width: 300px; margin-right: 10px;" />
 </div>
 
 ## Desenvolvedor
