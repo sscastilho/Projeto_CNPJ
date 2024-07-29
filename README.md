@@ -7,8 +7,8 @@ Este projeto é uma aplicação web para consulta de CNPJ utilizando a API da Br
 ## Como rodar o projeto
 
 1. Clone o repositório:
-    ```sh
-    git clone <URL_DO_REPOSITORIO>
+    ```HTTPS
+    git clone <https://github.com/sscastilho/Projeto_CNPJ.git>
     ```
 
 2. Abra o arquivo `index.html` em um navegador web.
